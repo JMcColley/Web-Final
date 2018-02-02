@@ -1,11 +1,13 @@
 li{
-  
-}
-#navBar.li{
-    display:Inline;
-    margin:80px;
+   
 }
 #navBar{
     border:10px black solid;
     background-color:red;
+   
+
+}
+#navList{
+    display:Inline;
+    margin:80px;
 }
