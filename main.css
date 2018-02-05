@@ -1,13 +1,37 @@
-li{
-   
+body{
+    background-color:darkslategray;
+    margin:0;
+    padding:0;
+}
+h1{
+    margin-left:20px;
 }
 #navBar{
-    border:10px black solid;
-    background-color:red;
-   
+    margin:0;
+}
+#navBar ul {
+    border:5px black solid;
+    border-radius: 30px;
+    background-color:rgb(211, 42, 42);
+    text-align: center;
+    padding: 21px;
+    
 
 }
-#navList{
+#navBar ul li {
     display:Inline;
-    margin:80px;
+    
+    
+}
+#navBar ul li:hover{
+    background-color:rgb(90, 87, 87);
+}
+a{
+    text-decoration: none;
+    color:black;
+    font-family:sans-serif;
+    margin: 50px;
+    padding: 20px;
+    background-color:rgb(211, 42, 42);
+    
 }
