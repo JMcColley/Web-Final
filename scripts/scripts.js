@@ -7,6 +7,9 @@ var sections;
 var xScale;
 var yScale;
 var y;
+var address = false;
+var email = false;
+var phone = false;
 
 var itemName = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
 var itemValue = [10, 5, 3.6, 7, 14];
@@ -46,7 +49,6 @@ function init() {
 		}
 		context.stroke();
 
-
 		context.font = "20 pt Verdana";
 		context.textBaseline = "bottom";
 		for (i = 0; i < 5; i++) {
@@ -54,19 +56,14 @@ function init() {
 			context.fillText(itemName[i], xScale * (i + 1), y - margin);
 		}
 
-
-
 		context.fillStyle = "#9933FF;";
 		context.shadowColor = 'rgba(128,128,128, 0.5)';
-
 
 		context.shadowOffsetX = 9;
 		context.shadowOffsetY = 3;
 
-
 		context.translate(0, canvas.height - margin);
 		context.scale(xScale, -1 * yScale);
-
 
 		for (i = 0; i < 5; i++) {
 			context.fillRect(i + 1, 0, 0.3, itemValue[i]);
@@ -97,4 +94,31 @@ window.onload = function () {
 
 	setInterval(changeImage, 2000);
 
+}
+function clickAddress() {
+	if (address) {
+		address = false;
+		document.getElementById("add").style.fontSize = "16px";
+	}else{
+		address = true;
+		document.getElementById("add").style.fontSize = "30px";
+	}
+}
+function clickEmail() {
+	if (email) {
+		email = false;
+		document.getElementById("ema").style.fontSize = "16px";
+	}else{
+		email = true;
+		document.getElementById("ema").style.fontSize = "30px";
+	}
+}
+function clickPhone() {
+	if (phone) {
+		phone = false;
+		document.getElementById("phn").style.fontSize = "16px";
+	}else{
+		phone = true;
+		document.getElementById("phn").style.fontSize = "30px";
+	}
 }
