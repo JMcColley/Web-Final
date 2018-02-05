@@ -2,8 +2,9 @@ body{
     background-color:darkslategray;
     margin:0;
     padding:0;
+    font-size:16px;
 }
-h1{
+h1,h2{
     margin-left:20px;
 }
 
@@ -36,11 +37,31 @@ a{
     background-color:rgb(211, 42, 42);
     
 }
+p{
+    border:5px black solid;
+    background-color:rgb(211, 42, 42);
+    margin:10px;
+    padding:10px;
 
+}
+canvas{
+    margin-left:40px;
+    background-color: lightslategray;
+    padding-right:20px;
+    padding-left:20px;
+    padding-bottom: 20px;
+}
 
 #image { 
     -webkit-box-shadow: 0px 10px 10px #000; 
     -moz-box-shadow: 0px 10px 10px #000;
     -o-box-shadow: 0px 10px 10px #000;
     box-shadow: 0px 10px 10px #000; 
+}
+#add,#ema,#phn{
+    cursor: pointer;
+    margin-left:20px;
+}
+footer{
+    margin-left:20px;
 }
